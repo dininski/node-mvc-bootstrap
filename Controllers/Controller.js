@@ -17,7 +17,7 @@ BaseController.prototype = {
 
     getControllerName: function() {
         var fileName = __filename;
-        var controllerName = fileName.substring(0, fileName.indexOf('Controller'));
+        var controllerName = fileName.substring(0, fileName.indexOf('Controller.js'));
         return controllerName;
     },
 
