@@ -1,6 +1,6 @@
 {
     "name": "node-mvc-bootstrap",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "dependencies": {
         "architect": "0.1.11",
         "async": "0.2.10",
