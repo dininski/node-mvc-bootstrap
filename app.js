@@ -3,7 +3,7 @@ var architect = require('architect');
 var debug = true;
 var Config = require('./Common/Config');
 
-var configPath = path.join(__dirname, "ModulesConfig.js");
+var configPath = path.join(__dirname, "ApplicationConfig.js");
 var cluster = require('cluster');
 
 var cpuCount = require('os').cpus().length;
