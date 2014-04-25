@@ -1,15 +1,19 @@
 'use strict';
 
 var util = require('util');
-var BaseController = require('./BaseController');
+var Controller = require('./Controller');
 
 var HomeController = function () {
 };
 
-util.inherits(HomeController, BaseController);
+util.inherits(HomeController, Controller);
 
-HomeController.prototype.Index = function (req, res, next) {
-    this._http.respondJSON(req, res, {success: true});
+HomeController.prototype.Index = function () {
+    this.Json(arguments, {'success': true});
+};
+
+HomeController.prototype.Test = function() {
+    this.View(arguments, "Test", {});
 };
 
 module.exports = HomeController;

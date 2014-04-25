@@ -1,5 +1,5 @@
 {
-    "name": "RouteConfig",
+    "name": "TemplateEngine",
     "version": "0.1",
     "main": "main.js",
     "plugin": {

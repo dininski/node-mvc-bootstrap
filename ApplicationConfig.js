@@ -6,5 +6,6 @@ module.exports = [
     { packagePath: "./WebsocketCommunication/"},
     { packagePath: "./ControllerFactory/"},
     { packagePath: "./Database", db: Config.Database},
-    { packagePath: "./RouteConfig"}
+    { packagePath: "./RouteConfig"},
+    { packagePath: "./TemplateEngine"}
 ];

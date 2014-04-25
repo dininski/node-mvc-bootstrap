@@ -1,22 +1,14 @@
 'use strict';
 
 var util = require('util');
-var BaseController = require('./BaseController');
+var Controller = require('./Controller');
 
 var UsersController = function () {
 };
 
-util.inherits(UsersController, BaseController);
+util.inherits(UsersController, Controller);
 
-UsersController.prototype.registerRoutes = function () {
-    this._http.registerRoute({
-        method: 'POST',
-        path: '/users/register',
-        handler: this.handleUserRegister.bind(this)
-    })
-};
-
-UsersController.prototype.handleUserRegister = function (req, res, next) {
+UsersController.prototype.Register = function (req, res, next) {
     var userToRegister = req.body;
     var self = this;
 
