@@ -11,11 +11,6 @@ BaseController.prototype = {
         this._db = db;
         this._http = http;
         this._ws = ws;
-        this.registerRoutes();
-    },
-
-    registerRoutes: function() {
-        throw new Error('Not implemented');
     }
 };
 

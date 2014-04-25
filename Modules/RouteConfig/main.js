@@ -1,11 +1,10 @@
-var HttpServer = require('./Routing');
+var RouteConfig = require('./RouteConfig');
 
 module.exports = function(options, imports, register) {
-    var httpOptions = options.http;
-    var server = new Routing(httpOptions);
-    server.init();
+    var http = imports.HttpServer;
+    var cf = imports.ControllerFactory;
+    var routeConfig = new RouteConfig(http, cf);
+    routeConfig.init();
 
-    register(null, {
-        HttpServer: server
-    });
+    register();
 };

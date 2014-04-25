@@ -1,6 +1,7 @@
 var path = require('path');
 var architect = require('architect');
 var debug = true;
+var Config = require('./Common/Config');
 
 var configPath = path.join(__dirname, "ModulesConfig.js");
 var cluster = require('cluster');
@@ -26,7 +27,7 @@ if (cluster.isMaster && !debug) {
             console.log(err);
         } else {
             app.services.HttpServer.start();
-            console.log('Server started successfully');
+            console.log('Server started on port ' + Config.HttpServer.port);
         }
     });
 }

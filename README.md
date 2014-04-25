@@ -1,2 +1,3 @@
-NodeMvcBootstrap
+Node.js MVC bootstrapper
 ================
+
