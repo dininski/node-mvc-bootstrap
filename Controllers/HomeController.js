@@ -12,9 +12,5 @@ HomeController.prototype.Index = function () {
     this.Json(arguments, {'success': true});
 };
 
-HomeController.prototype.Test = function() {
-    this.View(arguments, "Test", {});
-};
-
 module.exports = HomeController;
 
