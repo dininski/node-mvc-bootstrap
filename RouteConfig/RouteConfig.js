@@ -19,7 +19,7 @@ Routing.prototype = {
         var action = req.params.action;
 
         var controller = this._controllerFactory.get(controllerName);
-        if(controller.hasOwnProperty(action)) {
+        if(controller[action]) {
             controller[action].apply(controller, arguments);
         } else {
             next();
