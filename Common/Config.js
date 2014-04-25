@@ -8,4 +8,6 @@ Config.Database = {
     host: process.env.MONGOHQ_URL || 'localhost:27017'
 };
 
+Config.debug = false;
+
 module.exports = Config;
